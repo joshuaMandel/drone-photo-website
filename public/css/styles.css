@@ -137,9 +137,10 @@ header video {
   }
 }
 
-@media screen and (max-width: 551px) {
+@media screen and (max-width: 650px) {
   #logo{
     height: 100px;
+    width: auto;
   }
 }
 

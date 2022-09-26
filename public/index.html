@@ -19,7 +19,7 @@
   <!-- Responsive navbar-->
   <nav id="nav-padding" class="navbar navbar-expand-lg navbar-dark nav-background py-2">
     <div class="container px-5">
-      <a id="logo" href="#!"><img src="assets/FLYPhotoLogo.png" alt="FlyPhoto Logo" /></a>
+      <a href="#!"><img  id="logo" src="assets/FLYPhotoLogo.png" alt="FlyPhoto Logo" /></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -44,10 +44,16 @@
   </nav>
   <!-- Header-->
   <header id="header-background" class="py-3">
-    <div class="container px-5">
+    <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+    <div class="overlay"></div>
+    <!-- The HTML5 video element that will create the background video on the header -->
+    <video playsinline autoplay="autoplay" muted="muted" loop="loop">
+      <source src="assets/drone-video-footage-SAMPLE.mp4" type="video/mp4">
+    </video>
+    <div id="header-text-container" class="container p-5">
       <div class="row gx-5 justify-content-center">
-        <div class="col-lg-6">
-          <div class="text-center my-5">
+        <div class="col-md-6">
+          <div id="header-text" class="text-center my-5">
             <h1 class="display-5 fw-bolder text-white mb-2">
               Capture events and real estate properties in a whole new way!
             </h1>
@@ -67,6 +73,8 @@
         </div>
       </div>
     </div>
+
+
   </header>
   <!-- Features section-->
   <section class="py-5 border-bottom" id="features">
@@ -426,32 +434,32 @@
         </p>
       </div>
       <div class="d-flex justify-content-center">
-      <div class="d-flex flex-column m-1">
-        <div class="d-flex">
-          <a class="text-decoration-none" href="tel:9703311691"><i class="bi bi-telephone text-white me-4">
-          </i></a>
-          
-          <a class="text-decoration-none" href="tel:9703311691">
-            <p class="m-0 text-white">
-              (970) 331-1691
-            </p>
-          </a>
+        <div class="d-flex flex-column m-1">
+          <div class="d-flex">
+            <a class="text-decoration-none" href="tel:9703311691"><i class="bi bi-telephone text-white me-4">
+              </i></a>
 
-        </div>
-        <div class="d-flex">
-          <a class="text-decoration-none" href="mailto: flyphotostl@gmail.com"><i
-              class="bi bi-envelope text-white me-4">
-            </i></a>
+            <a class="text-decoration-none" href="tel:9703311691">
+              <p class="m-0 text-white">
+                (970) 331-1691
+              </p>
+            </a>
 
-          <a class="text-decoration-none" href="mailto: flyphotostl@gmail.com">
-            <p class="m-0 text-white">
-              flyphotostl@gmail.com
-            </p>
-          </a>
+          </div>
+          <div class="d-flex">
+            <a class="text-decoration-none" href="mailto: flyphotostl@gmail.com"><i
+                class="bi bi-envelope text-white me-4">
+              </i></a>
 
+            <a class="text-decoration-none" href="mailto: flyphotostl@gmail.com">
+              <p class="m-0 text-white">
+                flyphotostl@gmail.com
+              </p>
+            </a>
+
+          </div>
         </div>
       </div>
-    </div>
 
     </div>
   </footer>

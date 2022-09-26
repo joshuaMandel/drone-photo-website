@@ -76,12 +76,71 @@
   }
 }
 
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.2;
+  z-index: 1;
+}
+
 .nav-background{
   background-color: rgba(32,64,80,255);
 }
 
 #header-background{
-  background-color: rgba(40,157,210,255);
+  position: relative;
+  height: 78vh;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#header-text h1, #header-text p, #header-text button{
+  text-shadow: 3px 3px 3px black;
+}
+
+#header-text button{
+  box-shadow: 2px 2px 2px black;
+}
+
+#header-text-container{
+  z-index: 2;
+  position: relative;
+  top: 0;
+}
+
+.video-container{
+  position:absolute;
+  background-position: center center;
+  top: auto;
+}
+
+header video { 
+  position:absolute;
+  background-color:#fff;
+  background-size: cover;
+  background-position: center center;
+  opacity: 100%;
+
+  z-index: -1;
+}
+
+@media screen and (min-width: 1800px) {
+  video {
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 551px) {
+  #logo{
+    height: 100px;
+  }
 }
 
 body {

@@ -28,11 +28,11 @@
     border-radius: 0.5em;
   }
   
-  #real, #brand, #properties, #way{
+   #brand,  #way, #capture, #and, #estate, #in{
     color: rgba(240,193,70,255);
   }
   
-  #new, #estate, #events{
+  #properties, #new, #events, #real, #a{
     color: rgba(40,157,210,255);
   }
   

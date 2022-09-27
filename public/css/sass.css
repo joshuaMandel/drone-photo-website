@@ -28,23 +28,6 @@
   border-radius: 0.5em;
 }
 
-#brand,
-#way,
-#capture,
-#and,
-#estate,
-#in {
-  color: rgba(240, 193, 70, 255);
-}
-
-#properties,
-#new,
-#events,
-#real,
-#a {
-  color: rgba(40, 157, 210, 255);
-}
-
 .slideshow {
   position: absolute;
   top: 0;

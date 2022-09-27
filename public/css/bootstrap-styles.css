@@ -100,6 +100,23 @@
   box-shadow: 2px 2px 2px black;
 }
 
+#brand,
+#way,
+#capture,
+#and,
+#estate,
+#in {
+  color: rgba(240, 193, 70, 255);
+}
+
+#properties,
+#new,
+#events,
+#real,
+#a {
+  color: rgba(40, 157, 210, 255);
+}
+
 
 #logo{
   width: 70%;
